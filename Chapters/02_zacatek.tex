@@ -1,0 +1,96 @@
+\newgeometry{left=0.1cm,bottom=0.1cm, right=0.1cm, top=0.1cm}
+\thispagestyle{empty} \addtocounter{page}{-1}
+.\newpage
+\thispagestyle{empty} \addtocounter{page}{-1}
+\begin{figure}[H]
+      \centering
+      \includegraphics[width=1\textwidth]{Images/zav_prace.pdf}
+\end{figure}
+\newpage
+.
+\restoregeometry
+
+% přesně podle formuláře "Zadání bak./dipl. práce" VYPLŇTE:
+\newcommand{\cvut}{České vysoké učení technické v~Praze}
+\newcommand{\fs}{Fakulta strojní}
+\newcommand{\um}{Ústav mechaniky tekutin a~termodynamiky}
+\newcommand{\program}{Aplikované vědy ve strojním inženýrství} % změňte, pokud máte jiný stud. program
+\newcommand{\obor}{Aplikovaná mechanika} % změňte, pokud máte jiný obor
+
+\newcommand{\druh}{Diplomová práce} % nebo "Diplomová práce"
+\newcommand{\nazevcz}{český název práce (přesně podle zadání!)}    % český název práce (přesně podle zadání!)
+\newcommand{\nazeven}{anglický název práce (přesně podle zadání!)}          % anglický název práce (přesně podle zadání!)
+\newcommand{\autor}{Autor}   % vyplňte své jméno a~příjmení (s akademickým titulem, máte-li jej)
+\newcommand{\vedouci}{vedoucí} % vyplňte jméno a~příjmení vedoucího práce, včetně titulů, např.: Doc. Ing. Ivo Malý, Ph.D.
+\newcommand{\pracovisteVed}{\um, \\ \fs, \cvut} % ZMĚŇTE, pokud vedoucí Vaší práce není z~KSI
+\newcommand{\konzultant}{--} % POKUD MÁTE určeného konzultanta, NAPIŠTE jeho jméno a~příjmení
+\newcommand{\pracovisteKonz}{--} % POKUD MÁTE konzultanta, NAPIŠTE jeho pracoviště
+
+% podle skutečnosti VYPLŇTE:
+\newcommand{\rok}{rok}  % rok odevzdání práce (jen rok odevzdání, nikoli celý akademický rok!)
+\newcommand{\kde}{Praze} % studenti z~Děčína ZMĚNÍ na: "Děčíně" (doplní se k~"prohlášení")
+
+\newcommand{\klicova}{klíčová, slova, se oddělují, čárkou}   % zde NAPIŠTE česky max. 5 klíčových slov
+\newcommand{\keyword}{key, words}       % zde NAPIŠTE anglicky max. 5 klíčových slov (přeložte z~češtiny)
+\newcommand{\abstrCZ}{abstrakt abstrakt
+}    % zde NAPIŠTE abstrakt v~češtině (cca 7 vět, min. 80 slov)
+\newcommand{\abstrEN}{abstrakt abstrakt} % zde NAPIŠTE abstrakt v~angličtině
+
+% příprava:    (na následujících 8 řádků NESAHEJTE!)
+\newbox\odstavecbox
+\newlength\vyskaodstavce
+\newcommand\odstavec[2]{%
+    \setbox\odstavecbox=\hbox{%
+         \parbox[t]{#1}{#2\vrule width 0pt depth 4pt}}%
+    \global\vyskaodstavce=\dp\odstavecbox
+    \box\odstavecbox}
+\newcommand{\delka}{105mm} % šířka textů ve 2. sloupci tabulky
+
+% použití přípravy:    % dovnitř "tabular" vůbec NESAHEJTE!
+\begin{tabular}{ll}
+  {\em Název práce:} & ~ \\
+  \multicolumn{2}{l}{\odstavec{\textwidth}{\bf \nazevcz}} \\[1em]
+  {\em Autor:} & \autor \\[1em]
+  {\em Studijní program:} & \program \\
+  {\em Obor:} & \obor \\
+  {\em Druh práce:} & \druh \\[1em]
+  {\em Vedoucí práce:} & \odstavec{\delka}{\vedouci\\ \pracovisteVed} \\
+  %{\em Konzultant:} & -- %\odstavec{\delka}{\konzultant \\ \pracovisteKonz}  % VYMAŽTE text "-- %" v~případě, že jste neměli konzultanta
+ \\[1em]
+  %\multicolumn{2}{l}{\odstavec{\textwidth}{{\em Abstrakt:} ~ \abstrCZ  }} \\[1em]
+  %\multicolumn{2}{l}{\odstavec{\delka}{{\em Abstrakt:} ~ \abstrCZ  }} \\[1em]
+  {\em Abstrakt:} & \odstavec{\delka}{\abstrCZ} \\[2em]
+  {\em Klíčová slova:} & \odstavec{\delka}{\klicova} \\[2em]
+
+  {\em Title:} & ~\\
+  \multicolumn{2}{l}{\odstavec{\textwidth}{\bf \nazeven}}\\[1em]
+  {\em Author:} & \autor \\[1em]
+  %\multicolumn{2}{l}{\odstavec{\textwidth}{{\em Abstract:} ~ \abstrEN  }} \\[1em]
+		{\em Abstract:} & \odstavec{\delka}{\abstrEN} \\[1em]
+  {\em Key words:} & \odstavec{\delka}{\keyword}
+\end{tabular}
+
+.\newpage
+\thispagestyle{empty}
+\chapter*{Prohlášení}
+\noindent Prohlašuji, že jsem diplomovou práci vypracoval samostatně pod dohledem své\-ho ve\-dou\-cí\-ho
+práce a~že jsem uvedl veškeré použité informační zdroje.\\
+
+\noindent V Praze
+
+\noindent \today \\
+
+\begin{flushright}
+
+....................................................\\
+Jméno Autora
+\end{flushright}
+
+.\newpage 
+\thispagestyle{empty}
+\chapter*{Poděkování}
+\noindent Děkuji vedoucímu práce za přínosné konzultace, pomoc a~odborné vedení této diplomové práce.
+
+\noindent Děkuji také týmu ...
+\newpage 
+\thispagestyle{empty}
