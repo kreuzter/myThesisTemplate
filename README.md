@@ -1,4 +1,7 @@
 # myThesisTemplate
+
+This repo [moved to GitLab](https://gitlab.com/texTemplates/thesis-template) and this, GH, instance is not maintained anymore.
+
 LaTeX template for a thesis loosely based on the requirements of CTU in Prague.
 
 (to build nomenclature, run
